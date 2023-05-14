@@ -144,30 +144,37 @@ class RecipeCard extends HTMLElement {
     ${data.ingredients}
   </p>
   `;
+
   let starImg = articleEl.querySelector('.rating img');
 
   if(data.rating == 0) {
     starImg.src = 'assets/images/icons/0-star.svg';
+    starImg.alt = "0 stars"
   }
 
   else if(data.rating == 1) {
     starImg.src = 'assets/images/icons/1-star.svg';
+    starImg.alt = "1 star"
   }
   
   else if(data.rating == 2) {
     starImg.src = 'assets/images/icons/2-star.svg';
+    starImg.alt = "2 stars"
   }
 
   else if(data.rating == 3) {
     starImg.src = 'assets/images/icons/3-star.svg';
+    starImg.alt = "3 stars"
   }
 
   else if(data.rating == 4) {
     starImg.src = 'assets/images/icons/4-star.svg';
+    starImg.alt = "4 stars"
   }
 
   else if(data.rating == 5) {
     starImg.src = 'assets/images/icons/5-star.svg';
+    starImg.alt = "5 stars"
   }
   }
 }
